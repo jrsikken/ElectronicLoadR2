@@ -9153,13 +9153,13 @@ Datasheet&lt;br&gt;
 <part name="Q1" library="electronicload" deviceset="IRLZ44Z" device="" value="IRLB3034PbF">
 <attribute name="DIGIKEY" value="IRLB3034PbF"/>
 </part>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n">
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1u">
 <attribute name="DIGIKEY" value="445-7456-1-ND"/>
 <attribute name="TEMPCOEFF" value="X5R"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1u">
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n">
 <attribute name="DIGIKEY" value="445-12511-1-ND"/>
 <attribute name="TEMPCOEFF" value="X5R"/>
 <attribute name="TOLERANCE" value="10%"/>
@@ -9171,7 +9171,7 @@ Datasheet&lt;br&gt;
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n">
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1u">
 <attribute name="DIGIKEY" value="445-7456-1-ND"/>
 <attribute name="TEMPCOEFF" value="X5R"/>
 <attribute name="TOLERANCE" value="10%"/>
@@ -9225,8 +9225,8 @@ Datasheet&lt;br&gt;
 <text x="172.72" y="106.68" size="1.778" layer="97">0.5V/5A</text>
 <text x="127" y="104.14" size="1.778" layer="97">3.278V</text>
 <text x="121.92" y="160.02" size="1.778" layer="97">3.3V</text>
-<text x="165.1" y="20.32" size="1.778" layer="97">Designed by Jasper Sikken</text>
-<text x="165.1" y="17.78" size="1.778" layer="97">jasper.sikken.nl/electronicload</text>
+<text x="162.56" y="17.78" size="1.778" layer="97">Designed by Jasper Sikken</text>
+<text x="162.56" y="15.24" size="1.778" layer="97">http://sikken.nl/electronicloadr2.html</text>
 <text x="20.32" y="55.88" size="1.778" layer="97">Close to Arduino</text>
 <text x="68.58" y="55.88" size="1.778" layer="97">Close to opamp</text>
 <wire x1="7.62" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
@@ -9234,9 +9234,9 @@ Datasheet&lt;br&gt;
 <wire x1="109.22" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="78.74" x2="157.48" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="157.48" y1="78.74" x2="157.48" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="157.48" y1="5.08" x2="111.76" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="111.76" y1="5.08" x2="111.76" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="78.74" x2="157.48" y2="50.8" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="111.76" y1="50.8" x2="111.76" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="160.02" y1="78.74" x2="187.96" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="187.96" y1="78.74" x2="187.96" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="187.96" y1="25.4" x2="160.02" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
@@ -9259,6 +9259,15 @@ Datasheet&lt;br&gt;
 <wire x1="88.9" y1="81.28" x2="88.9" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
 <text x="91.44" y="167.64" size="2.54" layer="97">OP-AMP CIRCUIT</text>
 <text x="162.56" y="48.26" size="1.778" layer="97">AK-122 heatsink</text>
+<text x="162.56" y="20.32" size="2.1844" layer="97">Jasper's Electronic Load R2</text>
+<text x="114.3" y="35.56" size="1.778" layer="97">Change history
+2.01 
+- C5 C6 100n&gt;1u
+- C7 1u&gt;100n</text>
+<wire x1="111.76" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="48.26" x2="157.48" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="5.08" x2="111.76" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="111.76" y1="5.08" x2="111.76" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -9271,7 +9280,7 @@ Datasheet&lt;br&gt;
 <instance part="R10" gate="G$1" x="195.58" y="154.94" rot="R270">
 <attribute name="DIGIKEY" x="195.58" y="154.94" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="U2" gate="A" x="132.08" y="40.64"/>
+<instance part="U2" gate="A" x="132.08" y="66.04"/>
 <instance part="U2" gate="B" x="165.1" y="160.02" rot="MR0"/>
 <instance part="U2" gate="C" x="147.32" y="104.14" rot="MR0"/>
 <instance part="U2" gate="D" x="185.42" y="132.08"/>
@@ -9316,7 +9325,7 @@ Datasheet&lt;br&gt;
 <attribute name="NAME" x="178.435" y="53.975" size="1.778" layer="95"/>
 </instance>
 <instance part="P+7" gate="1" x="91.44" y="50.8"/>
-<instance part="GND8" gate="1" x="119.38" y="38.1"/>
+<instance part="GND8" gate="1" x="119.38" y="63.5"/>
 <instance part="GND11" gate="1" x="144.78" y="116.84"/>
 <instance part="C2" gate="G$1" x="35.56" y="38.1" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" x="35.56" y="38.1" size="1.778" layer="96" rot="R180" display="off"/>
@@ -9573,9 +9582,9 @@ Datasheet&lt;br&gt;
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="119.38" y1="40.64" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="66.04" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="IN+"/>
-<wire x1="119.38" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
@@ -9746,13 +9755,13 @@ Datasheet&lt;br&gt;
 </net>
 <net name="N$20" class="0">
 <segment>
-<wire x1="149.86" y1="30.48" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="30.48" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="38.1" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="55.88" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="63.5" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="IN-"/>
-<wire x1="124.46" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="OUT"/>
-<wire x1="142.24" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -9798,6 +9807,10 @@ Datasheet&lt;br&gt;
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

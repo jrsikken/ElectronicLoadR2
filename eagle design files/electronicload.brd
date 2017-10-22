@@ -1912,7 +1912,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="47.588" y="32.1868" size="1.016" layer="25" ratio="17"/>
 <attribute name="VALUE" x="43.18" y="31.75" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n" x="24.4" y="18.64" smashed="yes" rot="R270">
+<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1u" x="24.4" y="18.64" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="445-7456-1-ND" x="24.4" y="18.64" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24.85" y="20.26" size="1.016" layer="25" ratio="17" rot="R90"/>
 <attribute name="TEMPCOEFF" value="X5R" x="24.4" y="18.64" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1920,7 +1920,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="22.75" y="19.44" size="1.016" layer="27" rot="R270"/>
 <attribute name="VOLTAGE" value="50V" x="24.4" y="18.64" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1u" x="31.47" y="14.4" smashed="yes" rot="R90">
+<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n" x="31.47" y="14.4" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="445-12511-1-ND" x="31.47" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="33.32" y="13.7" size="1.016" layer="25" ratio="17" rot="R90"/>
 <attribute name="TEMPCOEFF" value="X5R" x="31.47" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1936,7 +1936,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="24.534" y="25.904" size="1.016" layer="27" rot="R270"/>
 <attribute name="VOLTAGE" value="50V" x="26.184" y="25.104" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n" x="24.68" y="10.53" smashed="yes" rot="R90">
+<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1u" x="24.68" y="10.53" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="445-7456-1-ND" x="24.68" y="10.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="25.13" y="7.33" size="1.016" layer="25" ratio="17" rot="R90"/>
 <attribute name="TEMPCOEFF" value="X5R" x="24.68" y="10.53" size="1.778" layer="27" rot="R90" display="off"/>
