@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9093,7 +9093,7 @@ Datasheet&lt;br&gt;
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="20k">
 <attribute name="DIGIKEY" value="RMCF0603JT20K0CT-ND"/>
 </part>
-<part name="U2" library="electronicload" deviceset="AD8608" device="R" value="LMV324">
+<part name="U2" library="electronicload" deviceset="AD8608" device="R" value="MCP6004-I/SL">
 <attribute name="DIGIKEY" value=""/>
 </part>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="2k2">
@@ -9261,9 +9261,8 @@ Datasheet&lt;br&gt;
 <text x="162.56" y="48.26" size="1.778" layer="97">AK-122 heatsink</text>
 <text x="162.56" y="20.32" size="2.1844" layer="97">Jasper's Electronic Load R2</text>
 <text x="114.3" y="35.56" size="1.778" layer="97">Change history
-2.01 
-- C5 C6 100n&gt;1u
-- C7 1u&gt;100n</text>
+2.01 C5 C6 100n&gt;1u, C7 1u&gt;100n
+2.02 Changed U2 to MCP6004-I/SL</text>
 <wire x1="111.76" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="157.48" y1="48.26" x2="157.48" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="157.48" y1="5.08" x2="111.76" y2="5.08" width="0.1524" layer="97" style="shortdash"/>

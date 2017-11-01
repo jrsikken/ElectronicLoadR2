@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1716,10 +1716,10 @@ Your Eurocircuits Team
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1835,7 +1835,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="39.177" y="16.449" size="1.016" layer="25" ratio="17" rot="R90"/>
 <attribute name="VALUE" x="36.683" y="21.251" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U2" library="electronicload" package="SO14" value="LMV324" x="31.188" y="24.212" smashed="yes" rot="R270">
+<element name="U2" library="electronicload" package="SO14" value="MCP6004-I/SL" x="31.188" y="24.212" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="" x="31.188" y="24.212" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="30.583" y="28.792" size="1.27" layer="25" ratio="17"/>
 <attribute name="VALUE" x="30.553" y="28.022" size="1.27" layer="27" rot="R270"/>
