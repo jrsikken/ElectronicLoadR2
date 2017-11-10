@@ -9150,8 +9150,10 @@ Datasheet&lt;br&gt;
 </part>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q1" library="electronicload" deviceset="IRLZ44Z" device="" value="IRLB3034PbF">
-<attribute name="DIGIKEY" value="IRLB3034PbF"/>
+<part name="Q1" library="electronicload" deviceset="IRLZ44Z" device="" value="BTS133BKSA1">
+<attribute name="DIGIKEY" value="BTS133BKSA1-ND"/>
+<attribute name="FARNELL_OC" value="2480556"/>
+<attribute name="MOUSER_OC" value="726-BTS133BKSA1"/>
 </part>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1u">
 <attribute name="DIGIKEY" value="445-7456-1-ND"/>
@@ -9260,9 +9262,10 @@ Datasheet&lt;br&gt;
 <text x="91.44" y="167.64" size="2.54" layer="97">OP-AMP CIRCUIT</text>
 <text x="162.56" y="48.26" size="1.778" layer="97">AK-122 heatsink</text>
 <text x="162.56" y="20.32" size="2.1844" layer="97">Jasper's Electronic Load R2</text>
-<text x="114.3" y="35.56" size="1.778" layer="97">Change history
+<text x="114.3" y="35.56" size="1.27" layer="97">Change history
 2.01 C5 C6 100n&gt;1u, C7 1u&gt;100n
-2.02 Changed U2 to MCP6004-I/SL</text>
+2.02 Changed U2 to MCP6004-I/SL
+2.03 Changed mosfet to BTS133BKSA1</text>
 <wire x1="111.76" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="157.48" y1="48.26" x2="157.48" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="157.48" y1="5.08" x2="111.76" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
@@ -9344,7 +9347,10 @@ Datasheet&lt;br&gt;
 <attribute name="VALUE" x="33.02" y="22.86" size="1.778" layer="96"/>
 </instance>
 <instance part="GND1" gate="1" x="22.86" y="25.4"/>
-<instance part="Q1" gate="G$1" x="218.44" y="134.62"/>
+<instance part="Q1" gate="G$1" x="218.44" y="134.62">
+<attribute name="FARNELL_OC" x="218.44" y="134.62" size="1.778" layer="96" display="off"/>
+<attribute name="MOUSER_OC" x="218.44" y="134.62" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C5" gate="G$1" x="121.92" y="152.4" rot="R180">
 <attribute name="DIGIKEY" x="121.92" y="152.4" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="TEMPCOEFF" x="121.92" y="152.4" size="1.778" layer="96" rot="R180" display="off"/>

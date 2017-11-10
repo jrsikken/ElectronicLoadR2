@@ -1907,8 +1907,10 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="9.25" y="6" size="1.016" layer="27" rot="R90"/>
 <attribute name="VOLTAGE" value="16V" x="7.6" y="6.8" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q1" library="electronicload" package="TO220BV" value="IRLB3034PbF" x="50.8" y="26.67" smashed="yes" rot="R270">
-<attribute name="DIGIKEY" value="IRLB3034PbF" x="50.8" y="26.67" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="Q1" library="electronicload" package="TO220BV" value="BTS133BKSA1" x="50.8" y="26.67" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="BTS133BKSA1-ND" x="50.8" y="26.67" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="FARNELL_OC" value="2480556" x="50.8" y="26.67" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER_OC" value="726-BTS133BKSA1" x="50.8" y="26.67" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="47.588" y="32.1868" size="1.016" layer="25" ratio="17"/>
 <attribute name="VALUE" x="43.18" y="31.75" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
