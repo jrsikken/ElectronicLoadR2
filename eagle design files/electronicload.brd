@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -42,7 +42,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -56,6 +56,8 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -170,16 +172,18 @@
 <text x="68.24" y="41.86" size="5.08" layer="21" ratio="17">+</text>
 <text x="66.76" y="11.24" size="5.08" layer="21" ratio="17" rot="R270">-</text>
 <text x="67.3" y="1.3" size="1.778" layer="21" ratio="17">JRS2017</text>
-<text x="24.6" y="1.4" size="1.778" layer="21" ratio="17">ELECTRONIC LOAD R2</text>
+<text x="24.6" y="1.4" size="1.778" layer="21" ratio="17">ELECTRONIC LOAD R2.1</text>
 <text x="11.5" y="11.6" size="1.778" layer="21" ratio="17" rot="R90">STM32F103C8T6 ARDUINO</text>
 <text x="77.2" y="47.2" size="1.778" layer="21" ratio="17" rot="R90">19V
-5A
-15W</text>
+5A</text>
 <circle x="69.8" y="44.4" radius="2.517934375" width="0.508" layer="21"/>
 <circle x="69.3" y="8.2" radius="2.517934375" width="0.508" layer="21"/>
 <text x="24.6" y="3.9" size="1.778" layer="21" ratio="17">JASPER'S</text>
-<text x="11.3" y="50.5" size="2.54" layer="21" ratio="17" align="center">USB</text>
 <wire x1="22.86" y1="52.99" x2="22.86" y2="0.42" width="0.2032" layer="21"/>
+<text x="2.9" y="59.6" size="1.778" layer="46">Please note 
+two plates slots</text>
+<wire x1="7.8" y1="54" x2="11.6" y2="59" width="0.3048" layer="46"/>
+<wire x1="11.6" y1="59" x2="15.1" y2="54" width="0.3048" layer="46"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1595,6 +1599,42 @@ grid 2.54 mm</description>
 <wire x1="-1.662" y1="1.473" x2="1.687" y2="1.473" width="0.1524" layer="21"/>
 <wire x1="-1.662" y1="-1.473" x2="1.687" y2="-1.473" width="0.1524" layer="21"/>
 </package>
+<package name="MICRO-USB5+6P-SMD-0.65-AB">
+<wire x1="-3.7" y1="-2.15" x2="-3.7" y2="2.85" width="0.127" layer="51"/>
+<wire x1="-3.7" y1="2.85" x2="3.7" y2="2.85" width="0.127" layer="51"/>
+<wire x1="3.7" y1="2.85" x2="3.7" y2="-2.15" width="0.127" layer="51"/>
+<wire x1="3.7" y1="-2.15" x2="4.05" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="4.05" y1="-2.75" x2="-4.05" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-4.05" y1="-2.75" x2="-3.7" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-2.15" x2="3.7" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-3.683" y1="-1.524" x2="3.683" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-3.625" y1="-0.392" x2="-3.625" y2="0.37" width="0.508" layer="46"/>
+<wire x1="3.625" y1="-0.392" x2="3.625" y2="0.37" width="0.508" layer="46"/>
+<wire x1="-3.3" y1="2.85" x2="-3.7" y2="2.85" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="2.85" x2="-3.7" y2="1.3" width="0.127" layer="21"/>
+<wire x1="3.2" y1="2.85" x2="3.7" y2="2.85" width="0.127" layer="21"/>
+<wire x1="3.7" y1="2.85" x2="3.7" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-1.2" x2="-3.7" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="3.7" y1="-1.2" x2="3.7" y2="-2.1" width="0.127" layer="21"/>
+<rectangle x1="-3.683" y1="-2.667" x2="3.683" y2="3.048" layer="39"/>
+<smd name="1" x="-1.3" y="2.875" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="-0.65" y="2.875" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="0" y="2.875" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="0.65" y="2.875" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="5" x="1.3" y="2.875" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P1" x="-1.2" y="0" dx="1.9" dy="1.9" layer="1" roundness="50" rot="R90"/>
+<smd name="P2" x="1.2" y="0" dx="1.9" dy="1.9" layer="1" roundness="50" rot="R90"/>
+<pad name="P3" x="-3.625" y="0" drill="0.508" diameter="1.016" shape="long" rot="R90"/>
+<pad name="P4" x="3.625" y="0" drill="0.508" diameter="1.016" shape="long" rot="R90"/>
+<pad name="P5" x="-2.425" y="2.73" drill="0.8"/>
+<pad name="P6" x="2.425" y="2.73" drill="0.8"/>
+<text x="-1.905" y="3.81" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="0.889" layer="25" ratio="11">&gt;VALUE</text>
+<wire x1="-3.62" y1="0.58" x2="-3.62" y2="-0.56" width="0.8128" layer="31"/>
+<wire x1="3.63" y1="0.57" x2="3.63" y2="-0.56" width="0.8128" layer="31"/>
+<circle x="-2.44" y="2.74" radius="0.2059125" width="0.7366" layer="31"/>
+<circle x="2.42" y="2.74" radius="0.21540625" width="0.7366" layer="31"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -1720,6 +1760,7 @@ Your Eurocircuits Team
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1835,7 +1876,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="39.177" y="16.449" size="1.016" layer="25" ratio="17" rot="R90"/>
 <attribute name="VALUE" x="36.683" y="21.251" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U2" library="electronicload" package="SO14" value="MCP6004-I/SL" x="31.188" y="24.212" smashed="yes" rot="R270">
+<element name="U2" library="electronicload" package="SO14" value="MCP6074-E/SL" x="31.188" y="24.212" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="" x="31.188" y="24.212" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="30.583" y="28.792" size="1.27" layer="25" ratio="17"/>
 <attribute name="VALUE" x="30.553" y="28.022" size="1.27" layer="27" rot="R270"/>
@@ -1990,6 +2031,13 @@ Your Eurocircuits Team
 <attribute name="DIGIKEY" value="RMCF0603JT18K0CT-ND" x="28.9" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="28.165" y="13.165" size="1.016" layer="25" ratio="17" rot="R90"/>
 <attribute name="VALUE" x="30.805" y="13.765" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="J1" library="sodaq" package="MICRO-USB5+6P-SMD-0.65-AB" value="ZX62D-B-5PA8" x="11.7" y="51.2" smashed="yes" rot="R180">
+<attribute name="FARNELL_OC" value="2554981" x="11.7" y="51.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="Hirose" x="11.7" y="51.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ZX62D-B-5PA8" x="11.7" y="51.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="13.605" y="47.39" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="14.24" y="55.01" size="0.889" layer="25" ratio="11" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -2178,7 +2226,8 @@ Your Eurocircuits Team
 <wire x1="7.6" y1="19.6" x2="7.6" y2="7.675" width="0.8128" layer="1"/>
 <wire x1="9.9" y1="21.9" x2="7.6" y2="19.6" width="0.8128" layer="1"/>
 <wire x1="9.9" y1="21.9" x2="12.3" y2="24.3" width="0.8128" layer="1"/>
-<wire x1="12.3" y1="24.3" x2="18.4348375" y2="24.3" width="0.8128" layer="1"/>
+<wire x1="13.2" y1="24.3" x2="12.3" y2="24.3" width="0.8128" layer="1"/>
+<wire x1="13.2" y1="24.3" x2="18.4348375" y2="24.3" width="0.8128" layer="1"/>
 <wire x1="18.4348375" y1="24.3" x2="18.5476375" y2="24.1872" width="0.8128" layer="1"/>
 <wire x1="18.5476375" y1="24.1872" x2="19.5523625" y2="24.1872" width="0.8128" layer="1"/>
 <wire x1="19.5523625" y1="24.1872" x2="19.5901625" y2="24.225" width="0.8128" layer="1"/>
@@ -2190,6 +2239,11 @@ Your Eurocircuits Team
 <wire x1="3.81" y1="7.62" x2="5.545" y2="7.62" width="0.8128" layer="1"/>
 <wire x1="24.4" y1="24.225" x2="26.18" y2="24.225" width="0.508" layer="1"/>
 <wire x1="26.18" y1="24.225" x2="26.184" y2="24.229" width="0.508" layer="1"/>
+<contactref element="J1" pad="1"/>
+<wire x1="13" y1="48.325" x2="13" y2="47.3" width="0.508" layer="1"/>
+<wire x1="13" y1="47.3" x2="13.4" y2="46.9" width="0.508" layer="1"/>
+<wire x1="13.4" y1="46.9" x2="13.4" y2="24.5" width="0.8128" layer="1"/>
+<wire x1="13.4" y1="24.5" x2="13.2" y2="24.3" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R3" pad="2"/>
@@ -2277,12 +2331,38 @@ Your Eurocircuits Team
 <via x="67.3" y="31.4" extent="1-16" drill="0.6"/>
 <via x="70.9" y="31.3" extent="1-16" drill="0.6"/>
 <via x="71.2" y="26.8" extent="1-16" drill="0.6"/>
+<contactref element="J1" pad="5"/>
+<contactref element="J1" pad="P1"/>
+<contactref element="J1" pad="P6"/>
+<contactref element="J1" pad="P2"/>
+<contactref element="J1" pad="P3"/>
+<contactref element="J1" pad="P4"/>
+<contactref element="J1" pad="P5"/>
+<via x="6" y="31.9" extent="1-16" drill="0.35" diameter="0.7"/>
+<via x="11.5" y="33.6" extent="1-16" drill="0.35" diameter="0.7"/>
+<via x="9.1" y="24.7" extent="1-16" drill="0.35" diameter="0.7"/>
 </signal>
 <signal name="USB+">
 <contactref element="U1" pad="P$28"/>
 <contactref element="R1" pad="1"/>
-<wire x1="6" y1="30.45" x2="3.882425" y2="30.45" width="0.508" layer="1"/>
-<wire x1="3.882425" y1="30.45" x2="3.81" y2="30.48" width="0.508" layer="1" curve="-45"/>
+<wire x1="3.882425" y1="30.45" x2="6" y2="30.45" width="0.508" layer="1"/>
+<wire x1="3.81" y1="30.48" x2="3.882425" y2="30.45" width="0.508" layer="1" curve="45"/>
+<contactref element="J1" pad="3"/>
+<wire x1="11.7" y1="48.325" x2="11.7" y2="37.1" width="0.3048" layer="1"/>
+<wire x1="3.4362125" y1="33.9224" x2="2.9076" y2="33.3937875" width="0.3048" layer="1"/>
+<wire x1="2.9076" y1="33.3937875" x2="2.9076" y2="32.6462125" width="0.3048" layer="1"/>
+<wire x1="8.5224" y1="33.9224" x2="3.4362125" y2="33.9224" width="0.3048" layer="1"/>
+<wire x1="2.9076" y1="32.6462125" x2="3.882425" y2="31.6713875" width="0.3048" layer="1"/>
+<wire x1="3.882425" y1="31.6713875" x2="3.882425" y2="30.45" width="0.3048" layer="1"/>
+<wire x1="11.7" y1="37.1" x2="8.5224" y2="33.9224" width="0.3048" layer="1"/>
+</signal>
+<signal name="USB-">
+<contactref element="U1" pad="P$27"/>
+<contactref element="J1" pad="2"/>
+<wire x1="3.81" y1="33.02" x2="8.62" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="8.62" y1="33.02" x2="12.4" y2="36.8" width="0.3048" layer="1"/>
+<wire x1="12.4" y1="36.8" x2="12.4" y2="48.275" width="0.3048" layer="1"/>
+<wire x1="12.4" y1="48.275" x2="12.35" y2="48.325" width="0.3048" layer="1"/>
 </signal>
 </signals>
 </board>
